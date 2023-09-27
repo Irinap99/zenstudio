@@ -1,0 +1,172 @@
+.cta {
+  padding-bottom: 8rem;
+  &__heading-secondary {
+    margin-bottom: 6rem;
+    @media only screen and (max-width: $bp-smallest) {
+      margin-bottom: 4rem;
+    }
+  }
+  &__box {
+    background-color: red;
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 3rem;
+    background-image: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0.5) 0%,
+        rgba(255, 255, 255, 0.5) 50%,
+        transparent 50%
+      ),
+      url("../img/cta-img.jpg");
+    background-size: cover;
+
+    @media only screen and (max-width: $bp-large) {
+      background-position: center;
+    }
+    @media only screen and (max-width: $bp-medium) {
+      padding: 0;
+    }
+  }
+  &__form {
+    padding: 0 4rem;
+    padding-bottom: 3rem;
+    max-width: 50%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 3rem;
+    column-gap: 2rem;
+    @media only screen and (max-width: $bp-medium) {
+      row-gap: 1rem;
+      column-gap: 1rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      row-gap: 1rem;
+    }
+    @media only screen and (max-width: $bp-smallest) {
+      padding: 0 2rem;
+    }
+  }
+
+  &__text {
+    grid-column: 1/-1;
+    font-size: 2rem;
+    font-family: "Mulish", sans-serif;
+    color: $text-color;
+    display: inline-block;
+    width: 40%;
+    margin: 3rem;
+    padding: 1rem;
+    line-height: 1.2;
+    @media only screen and (max-width: $bp-large) {
+      font-size: 1.6rem;
+    }
+    @media only screen and (max-width: $bp-medium) {
+      text-align: center;
+      font-size: 1.4rem;
+      margin-bottom: 1rem;
+      padding: 0;
+    }
+    @media only screen and (max-width: $bp-smallest) {
+      font-size: 1rem;
+      margin-left: 1rem;
+    }
+  }
+
+  &__highlight-text {
+    display: inline-block;
+    text-transform: uppercase;
+    font-family: "Antic didone", sans-serif;
+    background-color: rgba($color-blue-light-2, 0.2);
+    padding: 1.2rem;
+    margin-bottom: 1.5rem;
+    @media only screen and (max-width: $bp-large) {
+      text-align: center;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+    @media only screen and (max-width: $bp-smallest) {
+      font-size: 1.2rem;
+    }
+  }
+
+  &__form label {
+    font-size: 2rem;
+    font-weight: 800;
+    color: $text-color;
+    display: block;
+    margin-bottom: 0.3rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      font-size: 1.4rem;
+    }
+    @media only screen and (max-width: $bp-smallest) {
+      font-size: 1rem;
+    }
+  }
+  &__form input {
+    font-family: inherit;
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-color: $color-blue-light-3;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0 0.5rem 1.5rem 0.2rem rgba(#000, 0.3);
+
+    @media only screen and (max-width: $bp-medium) {
+      padding: 0.5rem;
+      margin-bottom: 0;
+    }
+    @media only screen and (max-width: $bp-small) {
+      margin-bottom: 0;
+    }
+  }
+  &__form input:focus {
+    outline: 2px solid rgba($color-blue-light-2, 0.5);
+  }
+
+  &__submit {
+    grid-column: span 2;
+  }
+  &__btn {
+    padding: 1rem 2rem;
+
+    width: 100%;
+    font-family: inherit;
+    font-size: 2.4rem;
+    font-weight: 800;
+    color: $text-color;
+    border: none;
+    background-color: $color-blue-light-3;
+    border-radius: 3px;
+    box-shadow: 0 0.5rem 2rem 0.3rem rgba(#000, 0.4);
+    cursor: pointer;
+    transition: all 0.3s;
+
+    @media only screen and (max-width: $bp-large) {
+      font-size: 2rem;
+    }
+    @media only screen and (max-width: $bp-medium) {
+      font-size: 1.6rem;
+    }
+    @media only screen and (max-width: $bp-smallest) {
+      font-size: 1rem;
+      padding: 0.5 1rem;
+    }
+  }
+
+  &__btn:hover,
+  &__btn:active {
+    background-color: rgba($color-blue-light-3, 0.4);
+  }
+  &__btn:active {
+    transform: translateY(1px);
+    box-shadow: 0 0.5rem 1.5rem 0.2rem rgba(#000, 0.3);
+  }
+}

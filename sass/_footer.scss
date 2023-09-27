@@ -1,0 +1,80 @@
+.footer {
+  background-color: $color-blue-light-1;
+  max-width: 100%;
+  min-height: 30rem;
+  display: flex;
+  justify-content: center;
+
+  &__content {
+    max-width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__logo {
+    display: block;
+    width: 15rem;
+    margin: auto;
+    padding: 4rem 0;
+    @media only screen and (max-width: $bp-smallest) {
+      width: 10rem;
+    }
+  }
+
+  &__details {
+    text-align: center;
+  }
+
+  &__links {
+    list-style: none;
+    padding-bottom: 4rem;
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 2rem;
+    column-gap: 30rem;
+    @media only screen and (max-width: $bp-small) {
+      column-gap: 10rem;
+    }
+  }
+  &__link {
+    color: $color-blue-light-3;
+    opacity: 80%;
+    font-family: "Mulish", sans-serif;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    font-weight: 300;
+    transition: all 0.3s;
+    @media only screen and (max-width: $bp-large) {
+      font-size: 1.6rem;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      font-size: 1.4rem;
+    }
+    @media only screen and (max-width: $bp-smallest) {
+      font-size: 1.2rem;
+    }
+  }
+
+  &__link:hover,
+  &__link:active {
+    cursor: pointer;
+    opacity: 100%;
+    transform: translateY(1px);
+  }
+
+  &__copyright {
+    color: $color-blue-light-3;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    @media only screen and (max-width: $bp-large) {
+      text-align: center;
+    }
+    @media only screen and (max-width: $bp-smallest) {
+      font-size: 1rem;
+    }
+  }
+}

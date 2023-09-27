@@ -1,0 +1,14 @@
+{
+  "name": "yoga",
+  "version": "1.0.0",
+  "description": "Landing page for Zen Studio",
+  "main": "index.html",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/styles.css -w"
+  },
+  "author": "Irina",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  }
+}

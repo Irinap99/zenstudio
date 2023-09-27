@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/zenstudio-favicon-192-174.png" />
+    <link rel="apple-touch-icon" href="img/zenstudio-favicon-192-174.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Antic+Didone&family=Mulish:wght@200;300;400;500&family=Rubik:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Zen Studio</title>
+  </head>
+  <body>
+    <main class="main">
+      <div class="mobile-menu hidden">
+        <div class="mobile-menu__icon-box">
+          <ion-icon name="close-outline" class="mobile-menu__icon"></ion-icon>
+        </div>
+        <ul class="mobile-menu__nav-list">
+          <li>
+            <a href="#" class="mobile-menu__nav-link home-btn">Home</a>
+          </li>
+          <li>
+            <a href="#about" class="mobile-menu__nav-link mobile-btn"
+              >About us</a
+            >
+          </li>
+          <li>
+            <a href="#teachers" class="mobile-menu__nav-link mobile-btn"
+              >Teachers</a
+            >
+          </li>
+          <li>
+            <a href="#classes" class="mobile-menu__nav-link mobile-btn"
+              >Classes</a
+            >
+          </li>
+          <li>
+            <a href="#cta" class="mobile-menu__nav-link mobile-btn"
+              >Start your journey!</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="header-visible">
+        <header class="header">
+          <img
+            src="img/zenstudio-logo.png"
+            alt="zen studio logo"
+            class="header__logo"
+          />
+          <nav class="header__main-nav">
+            <ul class="header__nav-list">
+              <li>
+                <a href="#" class="header__nav-link">Home</a>
+              </li>
+              <li>
+                <a href="#about" class="header__nav-link">About us</a>
+              </li>
+              <li>
+                <a href="#teachers" class="header__nav-link">Teachers</a>
+              </li>
+              <li>
+                <a href="#classes" class="header__nav-link">Classes</a>
+              </li>
+              <li>
+                <a href="#cta" class="header__nav-link">Start your journey!</a>
+              </li>
+            </ul>
+            <div class="header__mobile-nav">
+              <ion-icon
+                name="menu-outline"
+                class="header__mobile-nav-icon"
+              ></ion-icon>
+            </div>
+          </nav>
+        </header>
+      </div>
+
+      <section class="hero" id="home">
+        <div class="hero__section">
+          <div class="hero__section-left">
+            <h1 class="hero__heading heading--1">Find your inner peace.</h1>
+            <p class="hero__text">
+              Return to your essence and reconnect with the rhythms of your
+              soul. Let go of the burdens that weigh you down and to embrace the
+              boundless joy and contentment that reside within.
+            </p>
+          </div>
+          <div class="hero__section-right">
+            <h1 class="hero__heading heading--1">Your Daily Dose of Zen.</h1>
+            <p class="hero__text hero__text-right">
+              Let's flow together toward a brighter, more balanced you!
+            </p>
+            <a href="#about" class="btn hero__btn-cta"
+              >Embrace wellness today!</a
+            >
+          </div>
+        </div>
+      </section>
+      <section class="about container" id="about">
+        <h3 class="about__heading-primary heading--3">About us</h3>
+        <h2 class="about__heading-secondary heading--2">
+          Explore our yoga tradition
+        </h2>
+        <div class="about__box">
+          <div class="about__paragraph">
+            <p class="about__text">
+              Welcome to our yoga sanctuary, a space where the ancient wisdom of
+              yoga meets the modern world in perfect harmony. I am honored to be
+              your guide on this transformative journey. As the founder of this
+              yoga school, my passion for yoga has spanned decades, and it is my
+              life's mission to share its profound benefits with you.
+            </p>
+            <p class="about__text">
+              Whether you are stepping onto the yoga mat for the first time or
+              seeking to deepen your practice, I invite you to embark on this
+              path with an open heart and a curious spirit. Our yoga school is a
+              place of growth, connection, and transformation, and I look
+              forward to sharing this sacred journey with you."
+            </p>
+            <p class="about__text">
+              Together, we create a supportive community where you are
+              encouraged to evolve at your own pace, to celebrate your
+              uniqueness, and to honor the journey you are on.
+            </p>
+            <p class="about__name">&#8213; Founder and Yogi, Aarav Sharma</p>
+            <img
+              src="img/signature.png"
+              alt="Aarv Sharma signature"
+              class="about__signature"
+            />
+          </div>
+          <div class="about__img-box">
+            <img
+              src="img/yogi-1.jpg"
+              alt="yoga instructor"
+              class="about__img-box-1"
+            />
+            <img
+              src="img/yogi-2.jpg"
+              alt="yoga instructor"
+              class="about__img-box-2"
+            />
+            <img
+              src="img/yogi-3.jpg"
+              alt="yoga instructor"
+              class="about__img-box-3"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="teachers container" id="teachers">
+        <h3 class="teachers__heading-primary heading--3">Teachers</h3>
+        <h2 class="teachers__heading-secondary heading--2">
+          Join Our Instructors in finding balance!
+        </h2>
+        <div class="teachers__box">
+          <div class="teachers__img-box">
+            <img
+              src="img/instructor-1.jpg"
+              alt="yoga instructor"
+              class="teachers__img"
+            />
+          </div>
+          <div class="teachers__text">
+            <h2 class="teachers__title">Let's Flow Together!</h2>
+            <h3 class="teachers__name">&#8213;Christine Brown</h3>
+            <p class="teachers__details">
+              Certified Yoga Instructor with over 20 years of experience.
+            </p>
+
+            <p class="teachers__paragraph">
+              Hello, lovely souls! 🙏 Are you ready to embark on a journey of
+              self-discovery, vitality, and inner peace? Join me for a class,
+              and let's create a space where you can escape the chaos of daily
+              life, find inner peace, and connect with a supportive yoga
+              community. Whether you seek physical fitness, stress relief, or a
+              deeper spiritual journey, there's a place for you here. See you on
+              the mat!
+            </p>
+          </div>
+        </div>
+        <div class="teachers__box">
+          <div class="teachers__text">
+            <h2 class="teachers__title">Unwind. Restore. Rejuvenate.</h2>
+            <h3 class="teachers__name">&#8213;Virat Kapoor</h3>
+            <p class="teachers__details">
+              Restorative Yoga Expert & Philosophy Workshops Instructor
+            </p>
+
+            <p class="teachers__paragraph">
+              Hello, I'm Virat Kapoor, and I invite you to join me on a journey
+              of profound relaxation and rejuvenation through the practice of
+              restorative yoga! I'll offer you practical tools for integrating
+              mindfulness and relaxation into your daily routine. I also conduct
+              workshops that delve into the philosophical aspects of yoga,
+              helping students connect with the spiritual and mental dimensions
+              of the practice. Can't wait to meet you!
+            </p>
+          </div>
+          <div class="teachers__img-box">
+            <img
+              src="img/instructor-2.jpg"
+              alt="yoga instructor"
+              class="teachers__img"
+            />
+          </div>
+        </div>
+        <div class="teachers__box">
+          <div class="teachers__img-box">
+            <img
+              src="img/instructor-3.jpg"
+              alt="yoga instructor"
+              class="teachers__img"
+            />
+          </div>
+          <div class="teachers__text">
+            <h2 class="teachers__title">Stretch & Thrive</h2>
+            <h3 class="teachers__name">&#8213;Valentina Reyes</h3>
+            <p class="teachers__details">
+              Specialist in Yoga for Flexibility and Mobility
+            </p>
+
+            <p class="teachers__paragraph">
+              I'm Valentina Reyes, and I'm here to take you on an exciting
+              journey of physical freedom and mobility through the art of yoga.
+              I believe that flexibility and mobility are the keys to a vibrant
+              and pain-free life. I'm all about inclusivity and empowerment. I
+              create a welcoming space where you can explore your body's
+              potential without judgment or pressure. We'll work at your pace,
+              honoring your unique needs and capabilities.
+            </p>
+          </div>
+        </div>
+        <div class="teachers__meet-team">
+          <a href="#" class="teachers__meet-button">Meet our team!</a>
+        </div>
+      </section>
+      <section class="classes-section container" id="classes">
+        <h3 class="classes__heading-primary heading--3">Classes</h3>
+        <h2 class="classes__heading-secondary heading--2">
+          Choose your path to wellness!
+        </h2>
+        <div class="classes">
+          <div class="classes__grid-item">
+            <div class="classes__card">
+              <img
+                src="img/class-1.jpg"
+                alt="yoga class"
+                class="classes__img"
+              />
+              <div class="classes__offer">
+                <h3 class="classes__title">Restorative Yoga</h3>
+                <p class="classes__price">120 €/month</p>
+                <ul class="classes__details">
+                  <li class="classes__info">
+                    <span class="classes__point"> &#8213; </span> A gentle style
+                    that uses props to support relaxation and deep release of
+                    tension.
+                  </li>
+                  <li class="classes__info">
+                    <span class="classes__point"> &#8213; </span> Reduction in
+                    anxiety and better sleep.
+                  </li>
+                  <li class="classes__info">
+                    <span class="classes__point"> &#8213; </span> Relief from
+                    chronic tension and pain.
+                  </li>
+                  <li class="classes__info">
+                    <span class="classes__point"> &#8213; </span> Beginner
+                    firendly.
+                  </li>
+                </ul>
+
+                <a href="#" class="classes__cta-btn">Sign up!</a>
+              </div>
+            </div>
+            <div class="classes__card">
+              <img
+                src="img/class-2.jpg"
+                alt="yoga class"
+                class="classes__img"
+              />
+              <div class="classes__offer">
+                <h3 class="classes__title">Prenatal Yoga</h3>
+                <p class="classes__price">90 €/month</p>
+                <ul class="classes__details">
+                  <li class="classes__info">
+                    <span class="classes__point"> &#8213; </span> Gentle and
+                    safe for expectant mothers, with a focus on comfort and
+                    well-being.
+                  </li>
+                  <li class="classes__info">
+                    <span class="classes__point"> &#8213; </span> Healthy
+                    Pregnancy Support.
+                  </li>
+                  <li class="classes__info">
+                    <span class="classes__point"> &#8213; </span> Reduces back
+                    pain and fatigue.
+                  </li>
+                  <li class="classes__info">
+                    <span class="classes__point"> &#8213; </span> Labor
+                    Preparation & Breathing Techniques.
+                  </li>
+                </ul>
+
+                <a href="#" class="classes__cta-btn">Sign up!</a>
+              </div>
+            </div>
+            <div class="classes__card">
+              <img
+                src="img/class-3.jpg"
+                alt="yoga class"
+                class="classes__img"
+              />
+              <div class="classes__offer">
+                <h3 class="classes__title">Kundalini Yoga</h3>
+                <p class="classes__price">100 €/month</p>
+                <ul class="classes__details">
+                  <li class="classes__info">
+                    <span class="classes__point"> &#8213; </span> Awaken the
+                    dormant energy within, promoting vitality and awareness.
+                  </li>
+                  <li class="classes__info">
+                    <span class="classes__point"> &#8213; </span> Reduction in
+                    anxiety and better sleep.
+                  </li>
+                  <li class="classes__info">
+                    <span class="classes__point"> &#8213; </span> Relief from
+                    chronic tension and pain.
+                  </li>
+                  <li class="classes__info">
+                    <span class="classes__point"> &#8213; </span> Beginner
+                    firendly.
+                  </li>
+                </ul>
+
+                <a href="#" class="classes__cta-btn">Sign up!</a>
+              </div>
+            </div>
+            <div class="classes__card">
+              <img
+                src="img/class-4.jpg"
+                alt="yoga class"
+                class="classes__img"
+              />
+              <div class="classes__offer">
+                <h3 class="classes__title">Bikram or Hot Yoga</h3>
+                <p class="classes__price">120 €/month</p>
+                <ul class="classes__details">
+                  <li class="classes__info">
+                    <span class="classes__point"> &#8213; </span> 26 challenging
+                    poses practiced in a room heated to a high temperature
+                    (35-40°C).
+                  </li>
+                  <li class="classes__info">
+                    <span class="classes__point"> &#8213; </span> Promotes
+                    Cardiovascular Health.
+                  </li>
+                  <li class="classes__info">
+                    <span class="classes__point"> &#8213; </span>Encourages
+                    mental concentration.
+                  </li>
+                  <li class="classes__info">
+                    <span class="classes__point"> &#8213; </span> Be prepared
+                    for the intensity of the heat.
+                  </li>
+                </ul>
+
+                <a href="#" class="classes__cta-btn">Sign up!</a>
+              </div>
+            </div>
+            <div class="classes__card">
+              <img
+                src="img/class-5.jpg"
+                alt="yoga class"
+                class="classes__img"
+              />
+              <div class="classes__offer">
+                <h3 class="classes__title">Vinyasa Flow Yoga</h3>
+                <p class="classes__price">100 €/month</p>
+                <ul class="classes__details">
+                  <li class="classes__info">
+                    <span class="classes__point"> &#8213; </span> Promotes
+                    flexibility and strength.
+                  </li>
+                  <li class="classes__info">
+                    <span class="classes__point"> &#8213; </span>
+                    Strengthens muscles throughout the body.
+                  </li>
+                  <li class="classes__info">
+                    <span class="classes__point"> &#8213; </span> Instructors
+                    design sequences, allowing for creativity and variety in
+                    each class.
+                  </li>
+                  <li class="classes__info">
+                    <span class="classes__point"> &#8213; </span> Beginner
+                    firendly.
+                  </li>
+                </ul>
+
+                <a href="#" class="classes__cta-btn">Sign up!</a>
+              </div>
+            </div>
+            <div class="classes__card">
+              <img
+                src="img/class-6.jpg"
+                alt="yoga class"
+                class="classes__img"
+              />
+              <div class="classes__offer">
+                <h3 class="classes__title">Workshops</h3>
+                <p class="classes__price">50 €/session</p>
+                <ul class="classes__details">
+                  <li class="classes__info">
+                    <span class="classes__point"> &#8213; </span> In-depth
+                    exploration of yoga practices.
+                  </li>
+                  <li class="classes__info">
+                    <span class="classes__point"> &#8213; </span> Meet new
+                    people & build a supportive community.
+                  </li>
+                  <li class="classes__info">
+                    <span class="classes__point"> &#8213; </span> Group
+                    discussions & Q&As.
+                  </li>
+                  <li class="classes__info">
+                    <span class="classes__point"> &#8213; </span> Receive
+                    insights from yoga experts.
+                  </li>
+                </ul>
+
+                <a href="#" class="classes__cta-btn">Sign up!</a>
+              </div>
+            </div>
+          </div>
+          <div class="classes__learn-more">
+            <a href="#" class="btn-more">Learn more!</a>
+          </div>
+        </div>
+      </section>
+      <section class="cta container" id="cta">
+        <h3 class="cta__heading-primary heading--3">Start yout journey!</h3>
+        <h2 class="cta__heading-secondary heading--2">
+          Transform Your Life with Yoga &#8213; Join us!
+        </h2>
+        <div class="cta__box">
+          <p class="cta__text">
+            <span class="cta__highlight-text"
+              >Ready to unlock your potential?</span
+            >
+            <br />
+            Fill out the form below to get started. We can't wait to welcome you
+            to our yoga community and help you discover the many benefits of
+            this transformative practice!
+          </p>
+          <form class="cta__form">
+            <div>
+              <label for="firstname">First Name</label>
+              <input
+                id="firstname"
+                type="text"
+                placeholder="First Name"
+                required
+              />
+            </div>
+            <div>
+              <label for="lastname">Last Name</label>
+              <input id="lastname" type="Last Name" placeholder="Last Name" />
+            </div>
+            <div>
+              <label for="phonenumber">Phone Number</label>
+              <input
+                id="firstname"
+                type="tel"
+                placeholder="Phone Number"
+                required
+              />
+            </div>
+            <div>
+              <label for="email"> E-mail adress</label>
+              <input
+                id="email"
+                type="email"
+                placeholder="name@adress.com"
+                required
+              />
+            </div>
+            <div class="cta__submit">
+              <button class="cta__btn">Start now!</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="footer container">
+      <div class="footer__content">
+        <img
+          src="img/zenstudio-logo-light.png"
+          alt="zen studio logo light"
+          class="footer__logo"
+        />
+        <div class="footer__details">
+          <ul class="footer__links">
+            <li class="footer__link">Home</li>
+            <li class="footer__link">About us</li>
+            <li class="footer__link">Instructors</li>
+            <li class="footer__link">Classes & Schedules</li>
+            <li class="footer__link">Workshops & Events</li>
+            <li class="footer__link">Blog</li>
+            <li class="footer__link">Contact Us</li>
+            <li class="footer__link">FAQs</li>
+          </ul>
+        </div>
+        <div class="footer__copyright">
+          <p>
+            &copy; Putinei Andreea-Irina 2023 | Website design, website template
+            and logo design were made by Putinei Andreea-Irina.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

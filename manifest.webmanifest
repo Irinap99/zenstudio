@@ -1,0 +1,14 @@
+{
+  "icons": [
+    {
+      "src": "img/zenstudio-favicon-192-174.png",
+      "type": "img/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "img/zenstudio-favicon-364-329.png",
+      "type": "img/png",
+      "sizes": "192x192"
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+.hero {
+  height: 100vh;
+  background-image: url(../img/yoga-cover.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin-bottom: 8rem;
+
+  &__section {
+    position: absolute;
+    top: 30%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+    align-content: center;
+    column-gap: 4rem;
+
+    @media only screen and (max-width: $bp-smallest) {
+      top: 10%;
+    }
+  }
+  &__heading {
+    margin-left: 2rem;
+    @media only screen and (max-width: $bp-largest) {
+      text-align: center;
+    }
+    @media only screen and (max-width: $bp-large) {
+      margin-left: 4rem;
+      text-align: center;
+      margin-left: 0;
+    }
+  }
+
+  &__text {
+    font-size: 1.6rem;
+    line-height: 1.2;
+    font-family: "Mulish", sans-serif;
+    color: $main-color;
+    display: block;
+    margin-left: 1rem;
+    padding: 0 1rem;
+    @media only screen and (max-width: $bp-largest) {
+      font-size: 1.4rem;
+      margin-right: 4rem;
+    }
+    @media only screen and (max-width: $bp-large) {
+      font-size: 1.2rem;
+      margin-right: 6rem;
+      margin-left: 4rem;
+      padding: 0;
+      text-align: center;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      font-size: 1rem;
+    }
+
+    &-right {
+      text-align: center;
+      @media only screen and (max-width: $bp-smallest) {
+        margin-right: 4rem;
+      }
+    }
+  }
+  &__section-right {
+    position: relative;
+  }
+  &__btn-cta {
+    position: absolute;
+    right: 30%;
+    margin-top: 0.5rem;
+    @media only screen and (max-width: $bp-large) {
+      right: 20%;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      right: 15%;
+    }
+  }
+}
